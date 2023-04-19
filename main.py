@@ -23,7 +23,7 @@ class MyRequestHandler(http.server.BaseHTTPRequestHandler):
         ret = index.query(data['body'])
 
         # 处理 POST 请求，此处只返回 JSON 数据
-        result = {'errno': 200, 'data': ret}
+        result = {'errno': 200, 'data': ret+''}
         self.send_response(200)
         self.send_header('Content-Type', 'application/json')
         self.end_headers()
