@@ -4,7 +4,7 @@ import os
 
 def main():
     # 创建命令行参数解析器
-    parser = argparse.ArgumentParser(description='Convert directory to file')
+    parser = argparse.ArgumentParser(description='Generate llama index file')
     parser.add_argument('dir', type=str, help='input directory')
     parser.add_argument('out', type=str, help='output file path')
 
