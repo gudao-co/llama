@@ -1,6 +1,7 @@
 import http.server
 import socketserver
 import json
+import os
 from llama_index import GPTSimpleVectorIndex
 
 index = GPTSimpleVectorIndex.load_from_disk('index.json')
