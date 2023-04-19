@@ -2,6 +2,8 @@ FROM python:3.9.16
 
 COPY ./ci/requirements.txt ./requirements.txt
 
+COPY ./index.json ./index.json
+
 COPY ./gen.py ./gen.py
 
 COPY ./main.py ./main.py
