@@ -1,6 +1,6 @@
 FROM python:3.9.16
 
-COPY ./requirements.txt ./requirements.txt
+COPY ./ci/requirements.txt ./requirements.txt
 
 COPY ./gen.py ./gen.py
 
